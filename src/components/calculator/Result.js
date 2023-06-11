@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import styles from './Result.module.css';
 
 const Result = (props) => {
   return (
-    <div>{props.resultado}</div>
+    <div className={styles.resultado}>{props.resultado}</div>
   )
 }
 
