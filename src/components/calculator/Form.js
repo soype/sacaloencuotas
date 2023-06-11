@@ -74,9 +74,9 @@ const Form = () => {
           calcular el CFT resultante y ver si te conviene la compra.
         </p>
         <label htmlFor="">Valor de cada cuota</label>
-        <input type="number" value={valorCuota} onChange={valorCuotaHandler} />
+        <input type="number" placeholder={valorCuota} onChange={valorCuotaHandler} />
         <label htmlFor="">Cantidad de cuotas</label>
-        <input type="number" value={cantCuotas} onChange={cantCuotasHandler} />
+        <input type="number" placeholder={cantCuotas} onChange={cantCuotasHandler} />
         <label htmlFor="">Valor total con cuotas</label>
         <input type="number" value={valorFinal} onChange={valorFinalHandler} />
       </form>
