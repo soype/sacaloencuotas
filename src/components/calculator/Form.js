@@ -6,7 +6,7 @@ import Result from "./Result";
 
 const Form = () => {
   const [tasa, setTasa] = useState(0.97);
-  const [resultado, setResultado] = useState("Conviene");
+  const [resultado, setResultado] = useState("");
   const [valorInicial, setValorInicial] = useState(0);
   const [valorCuota, setValorCuota] = useState(0);
   const [cantCuotas, setCantCuotas] = useState(0);
@@ -21,7 +21,7 @@ const Form = () => {
     if (plazoFijo > 0) {
       let diferencia = Math.abs(plazoFijo);
       setResultado(
-        "Te conviene sacarlo en cuotas. Si inviertes los $" +
+        "Te conviene sacarlo en cuotas. Si invertís los $" +
           valorInicial +
           " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías $" +
           diferencia.toFixed(2) +
@@ -66,7 +66,7 @@ const Form = () => {
         <label htmlFor="">Valor sin cuotas</label>
         <input
           type="number"
-          value={valorInicial}
+          placeholder={valorInicial}
           onChange={valorInicialHandler}
         />
         <p>

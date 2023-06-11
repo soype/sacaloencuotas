@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Noto Sans Miao', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(242	187	64	);
   height: 100vh;
+  background: url('./background.jpg');
+  color: white;
 }
