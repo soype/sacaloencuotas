@@ -5,12 +5,33 @@ import Card from "../UI/Card";
 import Result from "./Result";
 
 const Form = () => {
-  const [tasa, setTasa] = useState(0.97);
+  const [tasa, setTasa] = useState();
   const [resultado, setResultado] = useState("");
   const [valorInicial, setValorInicial] = useState(0);
   const [valorCuota, setValorCuota] = useState(0);
   const [cantCuotas, setCantCuotas] = useState(0);
   const [valorFinal, setValorFinal] = useState(0);
+
+  const apiToken = process.env.REACT_APP_API_TOKEN;
+
+  const apiUrl = "tasa_depositos_30_dias";
+  const proxyUrl = "https://bcra-proxy-cors.vercel.app";
+
+  useEffect(() => {
+    fetch(`${proxyUrl}/${apiUrl}`, {headers:{
+      Authorization: `${apiToken}`,
+      mode: 'no-cors',
+    }})
+    .then((res) => res.json())
+    .then(data => {
+      console.log(data); // Log the fetched data
+      const lastItem = data[data.length - 1]; // Access the last item in the data array
+      console.log(lastItem); // Log the last item
+      setTasa(lastItem.v / 100); // Process the last item as needed
+      console.log(tasa);
+    })
+    .catch(error => console.log(error))
+  }, [resultado])
 
   useEffect(() => {
     setValorFinal(valorCuota * cantCuotas);
@@ -79,6 +100,7 @@ const Form = () => {
         <input type="number" placeholder={cantCuotas} onChange={cantCuotasHandler} />
         <label htmlFor="">Valor total con cuotas</label>
         <input type="number" value={valorFinal} onChange={valorFinalHandler} />
+        <p>Tasa de interes: {tasa * 100}%</p>
       </form>
       <Result resultado={resultado}></Result>
     </Card>
