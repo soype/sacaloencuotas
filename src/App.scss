@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap");
+
+.App {
+  font-family: "Noto Sans Miao", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237 223 213);
+  height: 100vh;
+  color: rgb(58, 100, 158);
+}
+
+.stonks {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.stonks svg {
+  height: 400px;
+  width: 500px;
+  .s0 {
+    fill: #ffffff;
+  }
+  .s1 {
+    fill: #a9d9f3;
+  }
+  .s2 {
+    fill: none;
+    stroke: #3169a7;
+    stroke-width: 2;
+  }
+  .s3 {
+    fill: #fad7dc;
+  }
+  .s4 {
+    fill: #353c73;
+  }
+  .s5 {
+    fill: #85b0d3;
+  }
+  .s6 {
+    fill: none;
+    stroke: #353c73;
+    stroke-width: 4;
+  }
+  .s7 {
+    fill: #3169a7;
+  }
+  .s8 {
+    fill: #fbadb1;
+  }
+  .s9 {
+    fill: none;
+    stroke: #353c73;
+    stroke-width: 2;
+  }
+  .s10 {
+    fill: none;
+    stroke: #353c73;
+    stroke-width: 2;
+    stroke-dasharray: 12, 12;
+  }
+  .s11 {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+  }
+  .s12 {
+    fill: none;
+    stroke: #353c73;
+    stroke-width: 3;
+  }
+}
+
+.tarjeta {
+  position: absolute;
+  right: 0;
+  top: 0;
+  svg {
+    height: 400px;
+    width: 400px;
+    .s0 {
+      fill: none;
+      stroke: #d3d1e8;
+      stroke-width: 2;
+    }
+    .s1 {
+      fill: #e3e2ef;
+    }
+    .s2 {
+      fill: #b4b4d5;
+    }
+    .s3 {
+      fill: #d3d1e8;
+    }
+    .s4 {
+      fill: #f67406;
+    }
+    .s5 {
+      fill: #401a4c;
+    }
+    .s6 {
+      fill: #ffaa24;
+    }
+    .s7 {
+      fill: #e3baa1;
+    }
+    .s8 {
+      fill: #356fe4;
+    }
+    .s9 {
+      fill: #e39fa1;
+    }
+    .s10 {
+      fill: none;
+      stroke: #401a4c;
+      stroke-width: 0.6;
+    }
+    .s11 {
+      fill: #f1f1f1;
+    }
+    .s12 {
+      fill: #f67406;
+      stroke: #f1f1f1;
+      stroke-width: 0.6;
+    }
+    .s13 {
+      fill: #5986e4;
+    }
+    .s14 {
+      fill: #ffffff;
+    }
+    .s15 {
+      fill: #f6921e;
+    }
+    .s16 {
+      fill: #562466;
+    }
+    .s17 {
+      fill: none;
+      stroke: #356fe4;
+      stroke-width: 2;
+    }
+    .s18 {
+      fill: none;
+      stroke: #e3e2ef;
+      stroke-width: 2;
+    }
+  }
+}

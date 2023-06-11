@@ -1,13 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap");
 .App {
-  text-align: center;
-  font-family: 'Noto Sans Miao', sans-serif;
+  font-family: "Noto Sans Miao", sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(242	187	64	);
+  background-color: rgb(237, 223, 213);
   height: 100vh;
-  background: url('./background.jpg');
-  color: white;
+  color: rgb(58, 100, 158);
 }
+
+.stonks {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.stonks svg {
+  height: 400px;
+  width: 500px;
+}
+.stonks svg .s0 {
+  fill: #ffffff;
+}
+.stonks svg .s1 {
+  fill: #a9d9f3;
+}
+.stonks svg .s2 {
+  fill: none;
+  stroke: #3169a7;
+  stroke-width: 2;
+}
+.stonks svg .s3 {
+  fill: #fad7dc;
+}
+.stonks svg .s4 {
+  fill: #353c73;
+}
+.stonks svg .s5 {
+  fill: #85b0d3;
+}
+.stonks svg .s6 {
+  fill: none;
+  stroke: #353c73;
+  stroke-width: 4;
+}
+.stonks svg .s7 {
+  fill: #3169a7;
+}
+.stonks svg .s8 {
+  fill: #fbadb1;
+}
+.stonks svg .s9 {
+  fill: none;
+  stroke: #353c73;
+  stroke-width: 2;
+}
+.stonks svg .s10 {
+  fill: none;
+  stroke: #353c73;
+  stroke-width: 2;
+  stroke-dasharray: 12, 12;
+}
+.stonks svg .s11 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+.stonks svg .s12 {
+  fill: none;
+  stroke: #353c73;
+  stroke-width: 3;
+}
+
+.tarjeta {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tarjeta svg {
+  height: 400px;
+  width: 400px;
+}
+.tarjeta svg .s0 {
+  fill: none;
+  stroke: #d3d1e8;
+  stroke-width: 2;
+}
+.tarjeta svg .s1 {
+  fill: #e3e2ef;
+}
+.tarjeta svg .s2 {
+  fill: #b4b4d5;
+}
+.tarjeta svg .s3 {
+  fill: #d3d1e8;
+}
+.tarjeta svg .s4 {
+  fill: #f67406;
+}
+.tarjeta svg .s5 {
+  fill: #401a4c;
+}
+.tarjeta svg .s6 {
+  fill: #ffaa24;
+}
+.tarjeta svg .s7 {
+  fill: #e3baa1;
+}
+.tarjeta svg .s8 {
+  fill: #356fe4;
+}
+.tarjeta svg .s9 {
+  fill: #e39fa1;
+}
+.tarjeta svg .s10 {
+  fill: none;
+  stroke: #401a4c;
+  stroke-width: 0.6;
+}
+.tarjeta svg .s11 {
+  fill: #f1f1f1;
+}
+.tarjeta svg .s12 {
+  fill: #f67406;
+  stroke: #f1f1f1;
+  stroke-width: 0.6;
+}
+.tarjeta svg .s13 {
+  fill: #5986e4;
+}
+.tarjeta svg .s14 {
+  fill: #ffffff;
+}
+.tarjeta svg .s15 {
+  fill: #f6921e;
+}
+.tarjeta svg .s16 {
+  fill: #562466;
+}
+.tarjeta svg .s17 {
+  fill: none;
+  stroke: #356fe4;
+  stroke-width: 2;
+}
+.tarjeta svg .s18 {
+  fill: none;
+  stroke: #e3e2ef;
+  stroke-width: 2;
+}/*# sourceMappingURL=App.css.map */

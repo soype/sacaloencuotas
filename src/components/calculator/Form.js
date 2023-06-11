@@ -6,6 +6,7 @@ import Result from "./Result";
 
 const Form = () => {
   const [tasa, setTasa] = useState();
+  const [tasaInt, setTasaInt] = useState(0);
   const [resultado, setResultado] = useState("");
   const [valorInicial, setValorInicial] = useState(0);
   const [valorCuota, setValorCuota] = useState(0);
@@ -20,18 +21,20 @@ const Form = () => {
   useEffect(() => {
     fetch(`${proxyUrl}/${apiUrl}`, {headers:{
       Authorization: `${apiToken}`,
-      mode: 'no-cors',
     }})
     .then((res) => res.json())
     .then(data => {
-      console.log(data); // Log the fetched data
       const lastItem = data[data.length - 1]; // Access the last item in the data array
-      console.log(lastItem); // Log the last item
       setTasa(lastItem.v / 100); // Process the last item as needed
-      console.log(tasa);
     })
     .catch(error => console.log(error))
   }, [resultado])
+
+
+  // Fallback por si falla la API de BCRA.
+  useEffect(() => {
+    setTasa(0.9299);
+  })
 
   useEffect(() => {
     setValorFinal(valorCuota * cantCuotas);
@@ -42,16 +45,16 @@ const Form = () => {
     if (plazoFijo > 0) {
       let diferencia = Math.abs(plazoFijo);
       setResultado(
-        "Te conviene sacarlo en cuotas. Si invertís los $" +
+        "Te conviene sacarlo en cuotas. Si invertís los $ " +
           valorInicial +
-          " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías $" +
+          " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías $ " +
           diferencia.toFixed(2) +
           " en total."
       );
     } else if (plazoFijo < 0) {
       let diferencia = Math.abs(plazoFijo);
       setResultado(
-        "No conviene comprar el producto en cuotas. Comparado a un plazo fijo, perderías $" +
+        "No conviene comprar el producto en cuotas. Comparado a un plazo fijo, perderías $ " +
           diferencia.toFixed(2) +
           " por lo que es más conveniente comprar en una sola cuota."
       );
@@ -60,6 +63,7 @@ const Form = () => {
         "El plazo fijo con retiros constantes es igual al valor final. No habría diferencia en comprarlo en una sola cuota."
       );
     }
+    setTasaInt(((valorFinal / valorInicial - 1) / cantCuotas * 12).toFixed(2) );
   }, [valorFinal, valorInicial, tasa, valorCuota, cantCuotas]);
 
   const valorInicialHandler = (e) => {
@@ -100,7 +104,8 @@ const Form = () => {
         <input type="number" placeholder={cantCuotas} onChange={cantCuotasHandler} />
         <label htmlFor="">Valor total con cuotas</label>
         <input type="number" value={valorFinal} onChange={valorFinalHandler} />
-        <p>Tasa de interes: {tasa * 100}%</p>
+        <p>Tasa de interés: {tasaInt * 100}%</p>
+        <p>Tasa plazo fijo: {tasa * 100}%</p>
       </form>
       <Result resultado={resultado}></Result>
     </Card>
