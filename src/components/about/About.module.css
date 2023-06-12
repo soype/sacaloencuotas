@@ -1,5 +1,6 @@
 .about {
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 @media all and (max-width: 600px) {

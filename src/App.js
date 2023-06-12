@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./App.css";
 
 import Form from "./components/calculator/Form";
@@ -6,15 +8,20 @@ import Tarjeta from "./assets/Tarjeta";
 import Dot from "./assets/Dot";
 import Bar from "./assets/Bar";
 import About from "./components/about/About";
+import Modal from './components/about/Modal';
 
-function App() {
+function App( props ) {
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="App">
+      { showModal && <Modal displayModal={setShowModal}></Modal> }
       <h1>Sacalo en cuotas</h1>
       <Form></Form>
       <Tarjeta></Tarjeta>
       <Dot></Dot>
-      <About></About>
+      <About modal={showModal} displayModal={setShowModal}></About>
       <Stonks></Stonks>
       <div className="firma">
         <a href="https://soype.ar" target="_blank" rel="nonopener noreferrer">

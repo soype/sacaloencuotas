@@ -238,6 +238,7 @@ h1 {
   .App {
     padding: 1rem 0 1rem;
     overflow: auto;
+    height: auto;
     font-size: 12px;
     position: relative;
   }

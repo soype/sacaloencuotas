@@ -5,28 +5,10 @@ import MiniCard from "../UI/MiniCard";
 import styles from "./Result.module.css";
 
 const Result = (props) => {
-  const apiToken = process.env.REACT_APP_API_TOKEN;
-
-  const apiUrl = "tasa_depositos_30_dias";
-  const proxyUrl = "https://bcra-proxy-cors.vercel.app";
-
-  useEffect(() => {
-    fetch(`${proxyUrl}/${apiUrl}`, {
-      headers: {
-        Authorization: `${apiToken}`,
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        const lastItem = data[data.length - 1]; // Access the last item in the data array
-        props.tasaPlazoHandler(lastItem.v / 100); // Process the last item as needed
-      })
-      .catch((error) => console.log(error));
-  }, []);
-
+  
   // Fallback por si falla la API de BCRA.
   useEffect(() => {
-    props.tasaPlazoHandler(0.9299);
+    props.tasaPlazoHandler(0.9699);
   }, []);
 
   const plazoFijoHandler = (e) => {
