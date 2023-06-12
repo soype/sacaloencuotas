@@ -11,7 +11,8 @@ const Modal = (props) => {
   }
 
   return (
-    <div className={styles.modal} onClick={displayModalHandler}>
+    <div className={styles.modal} >
+      <div className={styles["modal-background"]} onClick={displayModalHandler}></div>
       <Card className={styles['modal-card']}>
         <p>Sacalo en cuotas es una app que te permite calcular si te conviene comprar un producto en un solo pago o en cuotas con interés</p>
         <p>Para ello, se utiliza la tasa de interés del plazo fijo del Banco Nación, que generalmente es la más alta del mercado. Sin embargo, podés modificar a mano la tasa del plazo fijo para reflejar tu situación particular</p>
