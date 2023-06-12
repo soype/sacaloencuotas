@@ -1,4 +1,27 @@
 .resultado {
   width: 50%;
   padding: 1rem;
+}
+
+.numeros {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  justify-content: space-between;
+}
+
+.tasa {
+  height: 10rem;
+  width: 45%;
+  background-color: rgb(233, 233, 233);
+  border-radius: 1rem;
+  color: rgb(58, 100, 158);
+}
+
+.calculo {
+  height: 10rem;
+  width: 45%;
+  background-color: rgb(233, 233, 233);
+  border-radius: 1rem;
+  color: rgb(58, 100, 158);
 }/*# sourceMappingURL=Result.module.css.map */
