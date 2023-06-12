@@ -29,4 +29,25 @@
   color: rgb(58, 100, 158);
   box-shadow: 2px 7px 32px 0px rgba(0, 0, 0, 0.35);
   padding: 1rem;
+}
+
+@media all and (max-width: 1200px) {
+  .resultado {
+    width: auto;
+    flex-direction: column-reverse;
+  }
+  .texto {
+    margin: 0 0 1rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .minititle {
+    margin-bottom: 1rem;
+  }
+  .tasa-interes {
+    display: none;
+  }
+  .resultado {
+    margin: 0 0 1rem;
+  }
 }/*# sourceMappingURL=Result.module.css.map */

@@ -1,5 +1,6 @@
 .form {
   display: flex;
+  padding: 0 1rem 0;
 }
 
 .calculator {
@@ -15,4 +16,19 @@
 
 .submit {
   margin: 1rem;
+}
+
+@media all and (max-width: 1200px) {
+  .form {
+    flex-direction: column;
+    padding: 0 1rem 0;
+  }
+  .calculator {
+    width: auto;
+  }
+}
+@media all and (max-width: 600px) {
+  .calculator {
+    margin: 1rem 0 0;
+  }
 }/*# sourceMappingURL=Form.module.css.map */

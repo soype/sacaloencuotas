@@ -16,7 +16,8 @@ const Form = (props) => {
   
 
   useEffect(() => {
-    setValorFinal(valorCuota * cantCuotas);
+    if(valorCuota !== 0 && cantCuotas !== 0 && valorInicial !== 0){
+      setValorFinal(valorCuota * cantCuotas);
     let plazoFijo = valorInicial;
     for (let i = 0; i < cantCuotas; i++) {
       plazoFijo = plazoFijo * (1 + tasa / 12) - valorCuota;
@@ -43,6 +44,8 @@ const Form = (props) => {
       );
     }
     setTasaInt(((valorFinal / valorInicial - 1) / cantCuotas * 12).toFixed(2) );
+    }
+    
   }, [valorFinal, valorInicial, tasa, valorCuota, cantCuotas]);
 
   const valorInicialHandler = (e) => {

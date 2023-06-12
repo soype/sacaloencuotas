@@ -1,3 +1,22 @@
 .about {
   margin-top: 1rem;
+}
+
+@media all and (max-width: 600px) {
+  .about {
+    margin-bottom: 3rem;
+    z-index: 3;
+    height: 3rem;
+    padding: 0.5rem 1rem 0.5rem;
+    color: white;
+    background-color: rgb(58, 100, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .about h3 {
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=About.module.css.map */

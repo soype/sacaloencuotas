@@ -232,4 +232,52 @@ h1 {
   all: unset;
   padding-right: 1rem;
   cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+  .App {
+    padding: 1rem 0 1rem;
+    overflow: auto;
+    font-size: 12px;
+    position: relative;
+  }
+  .App h1 {
+    z-index: 3;
+  }
+  .App input {
+    margin: 1rem 0 1rem;
+  }
+  .App p {
+    margin-bottom: 1rem;
+  }
+  .dot {
+    top: 10%;
+  }
+  .tarjeta {
+    top: 30%;
+  }
+  .firma {
+    right: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    background-color: rgb(237, 223, 213);
+    width: 100%;
+    padding: 1rem 0 1rem;
+  }
+}
+@media all and (max-height: 900px) {
+  svg {
+    height: 300px !important;
+    width: 300px !important;
+  }
+}
+@media all and (min-width: 1980px) {
+  .stonks {
+    left: 15%;
+  }
+  .stonks svg {
+    height: 600px;
+    width: 600px;
+  }
 }/*# sourceMappingURL=App.css.map */

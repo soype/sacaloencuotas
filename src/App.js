@@ -12,13 +12,14 @@ function App() {
     <div className="App">
       <h1>Sacalo en cuotas</h1>
       <Form></Form>
-      <Stonks></Stonks>
       <Tarjeta></Tarjeta>
       <Dot></Dot>
-      <Bar></Bar>
       <About></About>
+      <Stonks></Stonks>
       <div className="firma">
-        <a href="https://soype.ar" target='_blank' rel='nonopener noreferrer'>Desarollado por Pedro Henestroza</a>
+        <a href="https://soype.ar" target="_blank" rel="nonopener noreferrer">
+          Desarollado por Pedro Henestroza
+        </a>
       </div>
     </div>
   );
