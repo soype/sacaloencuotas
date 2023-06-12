@@ -40,6 +40,12 @@ input {
 input:active, input:focus {
   border: 1px solid rgba(58, 100, 158, 0.5);
 }
+input:active::-moz-placeholder, input:focus::-moz-placeholder {
+  opacity: 0;
+}
+input:active::placeholder, input:focus::placeholder {
+  opacity: 0;
+}
 input::-moz-placeholder {
   text-align: center;
 }
