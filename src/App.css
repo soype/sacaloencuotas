@@ -174,4 +174,16 @@
 }
 .bar svg .s0 {
   fill: #5073b3;
+}
+
+.firma {
+  position: absolute;
+  bottom: 1%;
+  right: 0;
+  z-index: 1;
+}
+.firma a {
+  all: unset;
+  padding-right: 1rem;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

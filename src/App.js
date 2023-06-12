@@ -17,6 +17,9 @@ function App() {
       <Dot></Dot>
       <Bar></Bar>
       <About></About>
+      <div className="firma">
+        <a href="https://soype.ar" target='_blank' rel='nonopener noreferrer'>Desarollado por Pedro Henestroza</a>
+      </div>
     </div>
   );
 }
