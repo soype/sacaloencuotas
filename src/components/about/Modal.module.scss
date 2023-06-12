@@ -28,6 +28,18 @@
     }
 }
 
+.cafecito{
+    text-align: center;
+}
+
+.cafecito-link{
+    all: unset;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+    border-radius: 1rem;
+}
+
 @media all and (max-width: 600px){
     .modal-card{
         width: 18rem;
