@@ -28,8 +28,8 @@ const Result = (props) => {
         </MiniCard>
         <MiniCard>
           <p className={styles.minititle}><strong>Valor con cuotas</strong></p>
-          <p className={styles["valor-final"]}>Valor final: $ {props.valorFinal}</p>
-          <p className={styles["tasa-interes"]}>Interés cobrado: {props.interes}%</p>
+          <p className={styles["valor-final"]}>Valor final: <strong>$ {props.valorFinal}</strong></p>
+          <p className={styles["tasa-interes"]}>Interés cobrado: <strong>{props.interes}%</strong></p>
         </MiniCard>
       </div>
       <div className={styles.texto}>

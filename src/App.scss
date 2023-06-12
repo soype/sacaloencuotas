@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Miao&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;500;600;700&display=swap');
+
+
 
 .App {
-  font-family: "Noto Sans Miao", sans-serif;
+  font-family: "Poppins";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +34,8 @@ input[type=number] {
 
 input{
   text-align: center;
+  font-family: 'DM Sans';
+  font-weight: 600;
   border: none;
   box-shadow: 2px 7px 32px 0px rgba(0,0,0,0.35);
   outline: none;
