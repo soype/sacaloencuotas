@@ -41,7 +41,7 @@ const Result = (props) => {
             Valor final: <strong>$ {props.valorFinal}</strong>
           </p>
           <p className={styles["tasa-interes"]}>
-            Interés cobrado: <strong>{props.interes}%</strong>
+            Interés: <strong>{(props.interes).toFixed(2)}%</strong>
           </p>
         </MiniCard>
       </div>
