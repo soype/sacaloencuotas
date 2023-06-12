@@ -8,6 +8,7 @@
   background-color: rgb(237, 223, 213);
   height: 100vh;
   color: rgb(58, 100, 158);
+  overflow: hidden;
 }
 
 .stonks {
@@ -18,7 +19,7 @@
 }
 
 .stonks svg {
-  height: 400px;
+  height: 500px;
   width: 500px;
 }
 .stonks svg .s0 {
@@ -80,8 +81,8 @@
   top: 0;
 }
 .tarjeta svg {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
 }
 .tarjeta svg .s0 {
   fill: none;
@@ -149,4 +150,28 @@
   fill: none;
   stroke: #e3e2ef;
   stroke-width: 2;
+}
+
+.dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dot svg .s0 {
+  fill: #e58d05;
+}
+.dot svg .s1 {
+  fill: #fc3e00;
+}
+.dot svg .s2 {
+  fill: #5073b3;
+}
+
+.bar {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+}
+.bar svg .s0 {
+  fill: #5073b3;
 }/*# sourceMappingURL=App.css.map */
