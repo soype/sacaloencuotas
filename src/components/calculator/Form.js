@@ -80,7 +80,7 @@ const Form = (props) => {
         <label htmlFor="">Cantidad de cuotas</label>
         <input type="number" placeholder={cantCuotas} onChange={cantCuotasHandler} />
       </form>
-      <Result resultado={resultado} valorFinal={valorFinal} interes={tasaInt * 100} plazoFijo={tasa * 100} tasaPlazoHandler={setTasa}></Result>
+      <Result resultado={resultado} valorFinal={valorFinal} interes={tasaInt * 100} plazoFijo={tasa * 100} tasa={tasa} tasaPlazoHandler={setTasa}></Result>
     </Card>
   );
 };
