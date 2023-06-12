@@ -1,6 +1,12 @@
 .about {
-  margin-top: 1rem;
+  margin-top: 2rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: rgb(233, 233, 233);
+  padding: 1rem;
 }
 
 @media all and (max-width: 1200px) {
