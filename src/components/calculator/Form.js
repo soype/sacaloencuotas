@@ -34,9 +34,9 @@ const Form = (props) => {
     } else if (plazoFijo < 0) {
       let diferencia = Math.abs(plazoFijo);
       setResultado(
-        "No conviene comprar el producto en cuotas. Haciendo un plazo fijo con tu dinero terminarías pagando $ " +
+        "No conviene comprar el producto en cuotas. Comparado a un plazo fijo, pagarías $ " +
           diferencia.toFixed(2) +
-          " de más, por lo que conviene comprar en una sola cuota."
+          " por lo que es más conveniente comprar en una sola cuota."
       );
     } else {
       setResultado(
