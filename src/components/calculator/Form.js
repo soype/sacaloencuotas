@@ -36,7 +36,7 @@ const Form = (props) => {
       setResultado(
         "No conviene comprar el producto en cuotas. Aún haciendo un plazo fijo terminarías pagando $ " +
           diferencia.toFixed(2) +
-          " más que comprando en una solo pago."
+          " más que comprando en un solo pago."
       );
     } else {
       setResultado(
