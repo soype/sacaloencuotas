@@ -33,16 +33,16 @@ const Form = (props) => {
         if (plazoFijo > 0) {
           let diferencia = Math.abs(plazoFijo);
           setResultado(
-            "Te conviene sacarlo en cuotas. Si invertís los $ " +
+            "Te conviene sacarlo en cuotas. Si invertís los " +
               moneyString.format(valorInicial) +
-              " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías $ " +
+              " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías " +
               moneyString.format(diferencia) +
               " en total."
           );
         } else if (plazoFijo < 0) {
           let diferencia = Math.abs(plazoFijo);
           setResultado(
-            "No conviene comprar el producto en cuotas. Aún haciendo un plazo fijo terminarías pagando $ " +
+            "No conviene comprar el producto en cuotas. Aún haciendo un plazo fijo terminarías pagando " +
               moneyString.format(diferencia) +
               " más que comprando en un solo pago."
           );
@@ -65,16 +65,16 @@ const Form = (props) => {
         if (plazoFijo > 0) {
           let diferencia = Math.abs(plazoFijo);
           setResultado(
-            "Te conviene sacarlo en cuotas. Si invertís los $ " +
+            "Te conviene sacarlo en cuotas. Si invertís los " +
               moneyString.format(valorInicial) +
-              " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías $ " +
+              " que cuesta el producto en un plazo fijo y vas retirando el pago de las cuotas, ganarías " +
               moneyString.format(diferencia) +
               " en total."
           );
         } else if (plazoFijo < 0) {
           let diferencia = Math.abs(plazoFijo);
           setResultado(
-            "No conviene comprar el producto en cuotas. Aún haciendo un plazo fijo terminarías pagando $ " +
+            "No conviene comprar el producto en cuotas. Aún haciendo un plazo fijo terminarías pagando " +
               moneyString.format(diferencia) +
               " más que comprando en un solo pago."
           );
