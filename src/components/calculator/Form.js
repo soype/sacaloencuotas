@@ -75,7 +75,11 @@ const Form = (props) => {
         <p>
           Ingresá la cuota que pagarías para calcular si te conviene hacer la compra en un pago o en cuotas.
         </p>
-        <label htmlFor="">Valor de cada cuota</label>
+        <div>
+          <label htmlFor="">Valor cuota</label>
+          <input class={styles["form-check-input"]} type="checkbox" value="1" name="remember_me" id="rememberMeSwitch"></input>
+          <label htmlFor="">Valor total</label>
+        </div>
         <input type="number" placeholder={valorCuota} onChange={valorCuotaHandler} />
         <label htmlFor="">Cantidad de cuotas</label>
         <input type="number" placeholder={cantCuotas} onChange={cantCuotasHandler} />

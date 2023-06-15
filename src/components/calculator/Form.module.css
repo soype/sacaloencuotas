@@ -21,6 +21,31 @@
   margin: 1rem;
 }
 
+.form-check-input {
+  background-size: contain;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 0.5em !important;
+  width: 2em;
+  margin-left: -2.5em !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  background-position: left center;
+  border-radius: 2em;
+  transition: background-position 0.15s ease-in-out;
+  cursor: pointer;
+}
+.form-check-input:checked {
+  background-position: right center;
+}
+
 @media all and (max-width: 1200px) {
   .form {
     flex-direction: column;
