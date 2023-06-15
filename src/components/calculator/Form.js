@@ -120,7 +120,7 @@ const Form = (props) => {
         className={styles.calculator}
       >
         <p>
-          Ingresá acá el valor del bien que querés comprar si pagaras en
+          Ingresá acá el valor del bien que querés comprar pagando en
           efectivo o una cuota. Buscá el menor valor posible.
         </p>
         <label htmlFor="">Valor sin cuotas</label>
@@ -130,8 +130,7 @@ const Form = (props) => {
           onChange={valorInicialHandler}
         />
         <p>
-          Ingresá la cuota que pagarías para calcular si te conviene hacer la
-          compra en un pago o en cuotas.
+          Elegí ingresar el valor de la cuota que te ofrecen o el valor final con interés. Luego, ingresá la cantidad de cuotas.
         </p>
         <div className={styles.opciones}>
           <label htmlFor="" className={opcion && styles["opcion-selected"]}>
