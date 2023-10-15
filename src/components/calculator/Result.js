@@ -7,7 +7,7 @@ import styles from "./Result.module.css";
 const Result = (props) => {
   // Fallback por si falla la API de BCRA.
   useEffect(() => {
-    props.tasaPlazoHandler(.97);
+    props.tasaPlazoHandler(1.33);
   }, []);
 
   const plazoFijoHandler = (e) => {
@@ -17,8 +17,8 @@ const Result = (props) => {
     if(props.tasa === 0){
       props.tasaPlazoHandler()
     }
-
   };
+ 
 
   return (
     <div className={styles.resultado}>
@@ -29,7 +29,7 @@ const Result = (props) => {
           </p>
           <input
             type="number"
-            placeholder={props.plazoFijo}
+            placeholder={props.plazoFijo + "%"}
             onChange={plazoFijoHandler}
           />
         </MiniCard>
