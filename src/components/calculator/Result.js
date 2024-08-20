@@ -7,7 +7,7 @@ import styles from "./Result.module.css";
 const Result = (props) => {
   // Fallback por si falla la API de BCRA.
   useEffect(() => {
-    props.tasaPlazoHandler(1.33);
+    props.tasaPlazoHandler(0.44);
   }, []);
 
   const plazoFijoHandler = (e) => {

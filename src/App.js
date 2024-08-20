@@ -9,10 +9,12 @@ import Dot from "./assets/Dot";
 import Bar from "./assets/Bar";
 import About from "./components/about/About";
 import Modal from './components/about/Modal';
+import Dollar from "./components/dollar/Dollar";
 
 function App( props ) {
 
   const [showModal, setShowModal] = useState(false);
+  // const [showDollarModal, setShowDollarModal] = useState(false);
 
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App( props ) {
       <Tarjeta></Tarjeta>
       <Dot></Dot>
       <About modal={showModal} displayModal={setShowModal}></About>
+      {/* <Dollar question={'Y si tengo dolares?'} modal={showDollarModal} displayModal={setShowDollarModal}></Dollar> */}
       <Stonks></Stonks>
       <div className="firma">
         <a href="https://soype.ar" target="_blank" rel="nonopener noreferrer">

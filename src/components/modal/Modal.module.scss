@@ -1,0 +1,52 @@
+.modal{
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-background{
+    background-color: rgba(53, 53, 53, .3);
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+}
+
+.modal-card{
+    background-color: rgb(233, 233, 233);
+    color: rgb(58, 100, 158);
+    padding: 2rem;
+    height: auto;
+    width: 40rem;
+    text-align: justify;
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
+.cafecito{
+    text-align: center;
+    padding: 1rem;
+}
+
+.cafecito-link{
+    all: unset;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+    border-radius: 1rem;
+}
+
+@media all and (max-width: 600px){
+    .modal-card{
+        width: 18rem;
+    }
+    .cafecito-link{
+        padding: 1rem .25rem 1rem;
+    }
+}
+
